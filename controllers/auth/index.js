@@ -5,4 +5,5 @@ module.exports = {
   login: ctrlWrapper(require("./login")),
   getCurrent: ctrlWrapper(require("./getCurrent")),
   logout: ctrlWrapper(require("./logout")),
+  updateAvatar: ctrlWrapper(require("./updateAvatar")),
 };
