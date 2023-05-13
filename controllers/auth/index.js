@@ -6,4 +6,6 @@ module.exports = {
   getCurrent: ctrlWrapper(require("./getCurrent")),
   logout: ctrlWrapper(require("./logout")),
   updateAvatar: ctrlWrapper(require("./updateAvatar")),
+  verifyEmail: ctrlWrapper(require("./verifyEmail")),
+  resendVerifyEmail: ctrlWrapper(require("./resendVerifyEmail")),
 };

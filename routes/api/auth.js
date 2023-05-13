@@ -14,6 +14,13 @@ router.post(
   ctrl.register
 );
 
+router.get("/verify/:verificationToken", ctrl.verifyEmail);
+router.post(
+  "/verify",
+  validateBody(schemasUser.emailSchema),
+  ctrl.resendVerifyEmail
+);
+
 // signin
 router.post("/login", validateBody(schemasUser.loginSchema), ctrl.login);
 
